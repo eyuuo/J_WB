@@ -1,0 +1,23 @@
+package workbook.StepA;
+
+import java.util.Scanner;
+
+public class Date {
+	private int days;
+	private int seconds;
+	
+	public Date(){input();}
+	public void printAge() {
+		System.out.printf("날 수에 해당되는 시간은 모 %d초 입니다.\n", getDate());
+	}	
+	
+	void input() {
+		Scanner s = new Scanner(System.in);
+		System.out.printf("태어난 년도?");
+		this.days = s.nextInt();
+	}	
+	int getDate() {
+		seconds = days * 24 * 60 * 60;
+		return this.seconds;
+	}	
+}
