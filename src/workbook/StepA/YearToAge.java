@@ -8,12 +8,12 @@ public class YearToAge {
 	
 	public YearToAge(){input();}
 	public void printAge() {
-		System.out.printf("´ç½ÅÀÇ ³ªÀÌ´Â %dÀÔ´Ï´Ù.\n", getAge());
+		System.out.printf("ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì´ï¿½ %dï¿½Ô´Ï´ï¿½.\n", getAge());
 	}	
 	
 	void input() {
 		Scanner s = new Scanner(System.in);
-		System.out.printf("ÅÂ¾î³­ ³âµµ´Â?");
+		System.out.printf("ï¿½Â¾î³­ ï¿½âµµï¿½ï¿½?");
 		this.year = s.nextInt();
 	}	
 	int getAge() {
@@ -21,3 +21,4 @@ public class YearToAge {
 		return this.age;
 	}	
 }
+
