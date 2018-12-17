@@ -8,12 +8,12 @@ public class YearToAge {
 	
 	public YearToAge(){input();}
 	public void printAge() {
-		System.out.printf("����� ���̴� %d�Դϴ�.\n", getAge());
+		System.out.printf("당신의 나이는 %d입니다.\n", getAge());
 	}	
 	
 	void input() {
 		Scanner s = new Scanner(System.in);
-		System.out.printf("�¾ �⵵��?");
+		System.out.printf("태어난 년도?");
 		this.year = s.nextInt();
 	}	
 	int getAge() {
