@@ -1,24 +1,25 @@
 package workbook.StepA;
+import java.util.Scanner;
 
 public class Temperature {
 
-	private float C;
-	private float F;
+	private double c_degree;
+	private double f_degree;
 	
 	public Temperature(){input();}
 	
 	public void printAge() {
-		System.out.printf("화씨 온도 %f도 입니다.\n", getAge());
+		System.out.printf("화씨 온도는" + getAge() + "도 입니다.\n");
 	}	
 	
 	void input() {
-		Scanner S = new Scanner(System.in);
+		Scanner s = new Scanner(System.in);
 		System.out.printf("섭씨 온도를 입려하시오.");
-		this.C = s.nextInt();
+		this.c_degree = s.nextInt();
 	}	
-	float getAge() {
-		F = C *(1.8) + 32;
-		return this.F;
+	double getAge() {
+		f_degree = c_degree * 1.8 + 32;
+		return this.f_degree;
 	}	
 	
 }
