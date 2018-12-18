@@ -7,7 +7,7 @@ public class Apartment {
 	private double pyung_area;
 	
 	public Apartment(){input();}
-	public void printAge() {
+	public void printArea() {
 		System.out.printf("아파트의 평형은 %d입니다.\n", getArea());
 	}	
 	
