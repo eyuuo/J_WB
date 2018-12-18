@@ -8,14 +8,14 @@ public class StepAManager {
 		Scanner s = new Scanner(System.in);
 		while(true) {
 			printf("---------------------\n");
-			printf("1. ³ªÀÌ°è»ê\n");
-			printf("2. ¿Âµµº¯È¯\n");
-			printf("3. Á÷»ç°¢Çü ³ĞÀÌ°è»ê\n");
-			printf("4. ¾ÆÆÄÆ® ÆòÇü °è»ê\n");
-			printf("5. ³¯Â¥°è»ê\n");
-			printf("6. Á¡¼ö°è»ê\n");
-			printf("7. ÆÄÀÏ ¿ë·® °è»ê\n");
-			printf("=>¿øÇÏ´Â ¸Ş´º´Â?(0:exit) :");
+			printf("1. ë‚˜ì´ê³„ì‚°\n");
+			printf("2. ì˜¨ë„ë³€í™˜\n");
+			printf("3. ì§ì‚¬ê°í˜• ë„“ì´ê³„ì‚°\n");
+			printf("4. ì•„íŒŒíŠ¸ í‰í˜• ê³„ì‚°\n");
+			printf("5. ë‚ ì§œê³„ì‚°\n");
+			printf("6. ì ìˆ˜ê³„ì‚°\n");
+			printf("7. íŒŒì¼ ìš©ëŸ‰ ê³„ì‚°\n");
+			printf("=>ì›í•˜ëŠ” ë©”ë‰´ëŠ”?(0:exit) :");
 			menu = s.nextInt();
 			if(menu == 0) break;
 			switch(menu) {
