@@ -22,6 +22,30 @@ public class StepAManager {
 			case 1: 				
 				YearToAge yta = new YearToAge();
 				yta.printAge();
+				break;
+			case 2: 				
+				Temperature tem = new Temperature();
+				tem.printTemper();
+				break;
+			case 3: 				
+				Rectangle rec = new Rectangle();
+				rec.printSize();
+				break;
+			case 4: 				
+				Apartment apa = new Apartment();
+				apa.printArea();
+				break;
+			case 5: 				
+				Score sco = new Score();
+				sco.printScore();
+				break;
+			case 7: 				
+				File fil = new File();
+				fil.printFile();
+				break;
+			default:
+				System.out.printf("7이하의 숫자를 입력하세요.\n");
+				break;
 			}
 		}
 		
