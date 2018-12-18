@@ -1,4 +1,4 @@
-package workbook.StepA;
+package workbook.StepA2;
 
 import java.util.Scanner;
 
@@ -10,12 +10,12 @@ public class Temperature {
 	public Temperature(){input();}
 	
 	public void printTemper() {
-		System.out.printf("화씨 온도는"+getTemper()+"도 입니다.\n");
+		System.out.printf("화씨 온도는 "+getTemper()+"도 입니다.\n");
 	}	
 	
 	void input() {
 		Scanner s = new Scanner(System.in);
-		System.out.println("섭씨 온도를 입려하시오.");
+		System.out.printf("섭씨 온도를 입려하시오.");
 		this.c_degree = s.nextInt();
 	}	
 	double getTemper() {

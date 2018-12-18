@@ -1,4 +1,5 @@
-package workbook.StepA;
+package workbook.StepA2;
+
 
 import java.util.Scanner;
 
@@ -11,8 +12,8 @@ public class Score {
 	
 	public Score(){input();}
 	public void printScore() {
-		System.out.printf("입력하신 점수의 총점 %d이고, \n", getScore());
-		System.out.printf("평균은 %d입니다.\n", getScore()/3.0);
+		System.out.printf("입력하신 점수의 총점 "+getScore()+"이고, \n" );
+		System.out.printf("평균은 "+getScore()/3.0+ "입니다.\n");
 	}	
 	
 	void input() {

@@ -1,4 +1,4 @@
-package workbook.StepA;
+package workbook.StepA2;
 
 import java.util.Scanner;
 
