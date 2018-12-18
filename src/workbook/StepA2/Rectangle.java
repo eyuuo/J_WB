@@ -11,7 +11,7 @@ public class Rectangle {
   public Rectangle(){input();}
 	
 		public void printSize() {
-			System.out.printf("직사각형의 크기는 %d입니다.",getSize());
+			System.out.printf("직사각형의 크기는 "+getSize()+"입니다.");
 		}	
 		
 		void input() {

@@ -13,7 +13,7 @@ public class Date {
 	
 	void input() {
 		Scanner s = new Scanner(System.in);
-		System.out.printf("태어난 년도?");
+		System.out.printf("날 수를 입력하세요.");
 		this.days = s.nextInt();
 	}	
 	int getDate() {
