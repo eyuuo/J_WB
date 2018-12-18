@@ -10,7 +10,7 @@ public class Score {
 	private double average;
 	
 	public Score(){input();}
-	public void printAge() {
+	public void printScore() {
 		System.out.printf("입력하신 점수의 총점 %d이고, \n", getScore());
 		System.out.printf("평균은 %d입니다.\n", getScore()/3.0);
 	}	
