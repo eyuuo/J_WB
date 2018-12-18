@@ -7,7 +7,7 @@ public class Date {
 	private int seconds;
 	
 	public Date(){input();}
-	public void printAge() {
+	public void printDate() {
 		System.out.printf("날 수에 해당되는 시간은 모 %d초 입니다.\n", getDate());
 	}	
 	
