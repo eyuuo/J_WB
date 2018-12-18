@@ -19,6 +19,6 @@ public class YearToAge {
 	int getAge() {
 		age = 2018 - year + 1;
 		return this.age;
-	}	
+	}	 
 }
 
