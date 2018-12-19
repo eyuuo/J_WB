@@ -10,12 +10,12 @@ public class StepBManager {
 		while(true) {
 			System.out.print("---------------------\n");
 		 	System.out.print("1. 나이 계산 및 미성년자 판정\n");
-			System.out.print("2. 온도 상호 변\n");
-			System.out.print("3. 직사각형 넓이계산 및 정사각형 판\n");
+			System.out.print("2. 온도 상호 변화 \n");
+			System.out.print("3. 직사각형 넓이계산 및 정사각형 판정\n");
 			System.out.print("4. 아파트 평형 계산 및 종류 판정\n");
 			System.out.print("5. 날짜계산\n");
 			System.out.print("6. 점수계산\n");
-			System.out.print("7. 파일 전송 시 계산\n");
+			System.out.print("7. 파일 전송 시간 계산\n");
 			System.out.print("8. 다양한 조건 판\n");
 			System.out.print("9. 비만 판정\n");
 			System.out.print("=>원하는 메뉴는?(0:exit) :");
