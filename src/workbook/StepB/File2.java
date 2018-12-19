@@ -11,7 +11,7 @@ public class File2 {
 	
 	public File2(){input();}
 	public void printFile() {
-		System.out.printf("파일 전송 시간은 "+getTime()+"초 입니다.");
+		System.out.printf("파일 전송 시간은 "+getTime()+"초 입니다.\n");
 	}	
 	
 	void input() {
@@ -31,20 +31,9 @@ public class File2 {
 		time =0;
 		if(usb2.equalsIgnoreCase("N")) {
 			time = (int)bytes/1500000;
-			/*while(true) {
-			time ++; 
-			System.out.print(bytes);
-			if(bytes<1500000) break;
-			bytes=bytes/1500000;
-			}*/
 		}
 		else {
-			time = (int)bytes/60000000;/*
-			while(true) {
-			time ++;
-			if(bytes<60000000) break;
-			bytes=bytes/60000000;
-			}*/
+			time = (int)bytes/60000000;
 		}	
 		return this.time;
 	}
