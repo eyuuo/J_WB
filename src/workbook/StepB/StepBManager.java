@@ -3,9 +3,8 @@ package workbook.StepB;
 import java.util.Scanner;
 
 public class StepBManager {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
+	public StepBManager() {
 		int menu;
 		Scanner s = new Scanner(System.in);
 		while(true) {
