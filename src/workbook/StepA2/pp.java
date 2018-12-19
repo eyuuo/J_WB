@@ -20,7 +20,7 @@ public class pp {
 			menu = s.nextInt();
 			if(menu == 0) break;
 			switch(menu) {
-			case 1: 				
+			case 1: 				 
 				YearToAge yta = new YearToAge();
 				yta.printAge();
 				break;

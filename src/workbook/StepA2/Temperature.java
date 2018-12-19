@@ -10,7 +10,7 @@ public class Temperature {
 	public Temperature(){input();}
 	
 	public void printTemper() {
-		System.out.printf("화씨 온도는 "+getTemper()+"도 입니다.\n");
+		System.out.printf("화씨 온도는 %f도 입니다.\n",getTemper());
 	}	
 	
 	void input() {
