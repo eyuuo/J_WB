@@ -9,7 +9,7 @@ public class StepBManager {
 		Scanner s = new Scanner(System.in);
 		while(true) {
 			System.out.print("---------------------\n");
-		 	System.out.print("1. 나이 계산 및 미성년자 판\n");
+		 	System.out.print("1. 나이 계산 및 미성년자 판정\n");
 			System.out.print("2. 온도 상호 변\n");
 			System.out.print("3. 직사각형 넓이계산 및 정사각형 판\n");
 			System.out.print("4. 아파트 평형 계산 및 종류 판정\n");

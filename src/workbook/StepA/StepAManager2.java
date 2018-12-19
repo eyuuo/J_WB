@@ -9,7 +9,7 @@ import workbook.StepA2.Score;
 import workbook.StepA2.Temperature;
 import workbook.StepA2.YearToAge;*/
 
-public class pp {
+public class StepAManager2 {
 /*
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
