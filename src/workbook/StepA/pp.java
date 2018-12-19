@@ -1,8 +1,16 @@
-package workbook.StepA2;
+package workbook.StepA;
 import java.util.Scanner;
+/*
+import workbook.StepA2.Apartment;
+import workbook.StepA2.Date;
+import workbook.StepA2.File;
+import workbook.StepA2.Rectangle;
+import workbook.StepA2.Score;
+import workbook.StepA2.Temperature;
+import workbook.StepA2.YearToAge;*/
 
 public class pp {
-
+/*
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int menu;
@@ -55,5 +63,5 @@ public class pp {
 		}
 		
 	}
-	void printf(String s){System.out.print(s);} 
+	void printf(String s){System.out.print(s);} */
 }
