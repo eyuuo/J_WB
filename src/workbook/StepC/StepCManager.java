@@ -10,7 +10,7 @@ public class StepCManager {
 		Scanner s = new Scanner(System.in);
 		
 		while(true) {
-			System.out.print("\n---------------------\n");
+			System.out.print("---------------------\n");
 		 	System.out.print("1. 나이 계산 및 미성년자 판정\n");
 			System.out.print("2. 물의 온도 구간 판정 \n");
 			System.out.print("3. 직사각형 넓이계산 및 정사각형 판정\n");
