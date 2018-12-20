@@ -14,7 +14,7 @@ public class OnePlus {
 		
 		Scanner s = new Scanner(System.in);
 		System.out.print("숫자를 입력하세요.");
-		number = s.nextInt();
+		this.number = s.nextInt();
 		for(i=1;i<=number;i++) {
 			totalsum = totalsum + i;
 		}

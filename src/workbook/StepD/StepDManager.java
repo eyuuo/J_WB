@@ -29,7 +29,43 @@ public class StepDManager {
 				OnePlus one = new OnePlus();
 				one.printSum();
 				break;
-			
+			case 2: 				
+				MaxMin2 mm2 = new MaxMin2();
+				mm2.printMaxMin();
+				break;
+			case 3: 				
+				TotalAverage ta = new TotalAverage();
+				ta.printTA();
+				break;
+			case 4: 				
+				YearToAge4 yta4 = new YearToAge4();
+				yta4.printAge();
+				break;
+			case 5: 				
+				Rectangle4 rec4 = new Rectangle4();
+				rec4.printSize();
+				break;
+			case 6: 				
+				Apartment4 apa4 = new Apartment4();
+				apa4.printArea();
+				break;
+			case 7: 				
+				Coordinate1 coo1 = new Coordinate1();
+				coo1.printCoor();
+				break;
+			case 8: 				
+				Coordinate2 coo2 = new Coordinate2();
+				coo2.printCoor();
+				break;
+			case 9: 				
+				TimesTable tim = new TimesTable();
+				tim.printTimes();
+				break;
+			case 10: 				
+				ExclusiveMul exc = new ExclusiveMul();
+				exc.printEx();
+				break;
+				
 			default:
 				System.out.printf("11이하의 자연수를 입력하세요.\n");
 				break;
