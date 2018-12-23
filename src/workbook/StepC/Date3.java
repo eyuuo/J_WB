@@ -13,14 +13,6 @@ public class Date3 {
 			System.out.printf("월을 잘못입력하셨습니다.\n");
 		if(day<1) {
 			System.out.printf("일을 잘못입력하셨습니다.\n");}
-		else if(month==2) {
-			if(day>28)
-			System.out.printf("일을 잘못입력하셨습니다.\n");}
-		else if(month==4||month==6||month==9||month==11&&day>30) {
-			System.out.printf("일을 잘못입력하셨습니다.\n");}
-		else if(month==1||month==3||month==5||month==7||month==8||month==10||month==11||month==12&&day>31){
-				System.out.printf("일을 잘못입력하셨습니다.\n");
-		}
 		else
 		System.out.printf("이 날짜는 1년 %d 번째 날에 해당됩니다.\n", getday_count());
 		
