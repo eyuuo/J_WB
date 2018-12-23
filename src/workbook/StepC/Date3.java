@@ -10,9 +10,9 @@ public class Date3 {
 	public void printDate() {
 		
 		if(month<1||month>12)
-			System.out.printf("월을 잘못입력하셨습니다.\n");
-		if(day<1) {
-			System.out.printf("일을 잘못입력하셨습니다.\n");}
+			System.out.printf("잘못입력하셨습니다.\n");
+		else if(day<1) {
+			System.out.printf("잘못입력하셨습니다.\n");}
 		else
 		System.out.printf("이 날짜는 1년 %d 번째 날에 해당됩니다.\n", getday_count());
 		
