@@ -8,23 +8,18 @@ public class TimesTable2 {
 	public TimesTable2() {input();}
 	
 	public void printTimes2() {
-		if(mode == 1) {
-			for(int i=3;i<=9;i=i+2) {
-				for(int j=1; j<=9; j++){
-					System.out.printf("%d X %d = %-2d    ",i,j,i*j);
-					if(j%3==0)System.out.print("\n");
-				}
-			System.out.print("\n");}
-			
+		
+		for(int i=3;i<=9;i=i+2) {
+			for(int j=1; j<=9; j++){
+				if(mode == 1)
+				System.out.printf("%d X %d = %-2d    ",i,j,i*j);
+				else if(mode == 2)
+					System.out.printf("%d X %d = %-2d    ",i-1,j,(i-1)*j);
+				if(j%3==0)System.out.print("\n");
+			}
+			System.out.print("\n");
 		}
-		if(mode == 2) {
-			for(int i=2;i<=8;i=i+2) {
-				for(int j=1; j<=9; j++){
-					System.out.printf("%d X %d = %-2d    ",i,j,i*j);
-					if(j%3==0)System.out.print("\n");
-				}
-			System.out.print("\n");}
-		}
+		
 	}
 	
 	void input() {
