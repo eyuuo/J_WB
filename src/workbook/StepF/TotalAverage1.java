@@ -12,14 +12,12 @@ public class TotalAverage1 {
 	public TotalAverage1(){input();}
 	
 	public void printTotalAverage1() {
-		average[0] = sum[0]/5.0;
-		average[1] = sum[1]/5.0;
-		average[2] = sum[2]/5.0;
-		
-		System.out.printf("국어의 총점은 %d이고, 평균은 %.1f 입니다.\n",sum[0],average[0]);
-		System.out.printf("영어의 총점은 %d이고, 평균은 %.1f 입니다.\n",sum[1],average[1]);
-		System.out.printf("수학의 총점은 %d이고, 평균은 %.1f 입니다.\n",sum[2],average[2]);
-		
+		String name[] = {"국어","영어","수학"};
+		for(int i=0;i<3;i++){
+			average[i] = sum[i]/5.0;
+			System.out.printf("%s의 총점은 %d이고, 평균은 %.1f 입니다.\n",name[i],sum[i],average[i]);
+			}
+	
 	}	
 	
 	void input() {
