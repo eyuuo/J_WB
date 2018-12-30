@@ -44,7 +44,15 @@ public class StepHManager {
 			case 6:
 				SquarePower sp = new SquarePower();
 				sp.printNum();
-				
+			case 7:
+				StingInput sti = new StingInput();
+				sti.printNum();	
+			case 8:
+				StingInput2 sti2 = new StingInput2();
+				sti2.printNum();	
+			case 9:
+				StingInput3 sti3 = new StingInput3();
+				sti3.printNum();
 			default:
 				//System.out.printf("9이하의 자연수를 입력하세요.\n");
 				//5번을 실행시 출력된다. 그 이유 알아보자.
