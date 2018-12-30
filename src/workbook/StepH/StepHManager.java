@@ -24,12 +24,30 @@ public class StepHManager {
 			if(menu == 0) break;
 			switch(menu) {
 			case 1: 				
-				//FindSmax sma = new FindSmax();
-				//sma.printSmax();
+				Number num = new Number();
+				num.printNum();
 				break;
-			
+			case 2: 				
+				LottoNumber1 lot = new LottoNumber1();
+				lot.printNum();
+				break;
+			case 3: 				
+				LottoNumber2 lot2 = new LottoNumber2();
+				lot2.printNum();
+				break;
+			case 4:
+				RockPaperScissors rps = new RockPaperScissors();
+				rps.printResult();
+			case 5:
+				SlotMachine slm = new SlotMachine();
+				slm.printSlot();	
+			case 6:
+				SquarePower sp = new SquarePower();
+				sp.printNum();
+				
 			default:
-				System.out.printf("9이하의 자연수를 입력하세요.\n");
+				//System.out.printf("9이하의 자연수를 입력하세요.\n");
+				//5번을 실행시 출력된다. 그 이유 알아보자.
 				break;
 			}
 		
