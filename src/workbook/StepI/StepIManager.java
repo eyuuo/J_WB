@@ -22,10 +22,32 @@ public class StepIManager {
 			if(menu == 0) break;
 			switch(menu) {
 			case 1: 				
-				//FindSmax sma = new FindSmax();
-				//sma.printSmax();
+				Menu1 men = new Menu1();
+				men.printPice();
 				break;
-			
+			case 2:
+				Triangle3 tri3 = new Triangle3();
+				tri3.printTriangle();
+				break;
+			case 3:
+				Obesity3 obe3 = new Obesity3();
+				break;
+			case 4: 				
+				Menu2 men2 = new Menu2();
+				men2.printPice();
+				break;
+			case 5: 				
+				MaxNum mn = new MaxNum();
+				mn.printMax();
+				break;
+			case 6: 				
+				RandomNum rdn = new RandomNum();
+				rdn.printNum();
+				break;
+			case 7:
+				Menu3 men3 = new Menu3();
+				men3.printPice();
+				break;
 			default:
 				System.out.printf("7이하의 자연수를 입력하세요.\n");
 				break;
