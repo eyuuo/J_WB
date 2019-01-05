@@ -16,19 +16,14 @@ public class LottoNumber1 {Random generator = new Random();
 
 	}	
 
-
+	
 
 	void input() {
 	Scanner s = new Scanner(System.in);
 	
 	while(true) {
 		
-		for(int i=0;i<6;i++) {
-			this.lotto[i] = generator.nextInt(45) + 1;
-			for(int j = 0; j<i; j++)
-				if(lotto[i]==lotto[j]) 
-					i--;
-		}
+		getLotto();
 		System.out.printf("로또 당첨 번호는 ");
 		for(int i=0;i<6;i++) 
 			System.out.printf("%d ",lotto[i]);
@@ -41,6 +36,16 @@ public class LottoNumber1 {Random generator = new Random();
 		}
 
 	}	
+	
+	int[] getLotto() {
+		for(int i=0;i<6;i++) {
+			this.lotto[i] = generator.nextInt(45) + 1;
+			for(int j = 0; j<i; j++)
+				if(lotto[i]==lotto[j]) 
+					i--;
+		}
+		return lotto;
+	}
 }
 
 
