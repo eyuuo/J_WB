@@ -1,7 +1,6 @@
 
 import java.util.Scanner;
 
-
 import workbook.StepA.StepAManager;
 import workbook.StepB.StepBManager;
 import workbook.StepC.StepCManager;
@@ -11,6 +10,7 @@ import workbook.StepF.StepFManager;
 import workbook.StepG.StepGManager;
 import workbook.StepH.StepHManager;
 import workbook.StepI.StepIManager;
+import workbook.StepJ.StepJManager;
 
 public class WBManager {
 
@@ -18,26 +18,28 @@ public class WBManager {
 		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
 		System.out.print("원하는 Step은?");
-	    String step;
-	    step= s.next(); 
-		if(step.equalsIgnoreCase("A"))
+	    String Step;
+	    Step= s.next(); 
+		if(Step.equalsIgnoreCase("A"))
 			new StepAManager();
-		else if(step.equalsIgnoreCase("B"))
+		else if(Step.equalsIgnoreCase("B"))
 			new StepBManager();
-		else if(step.equalsIgnoreCase("C"))
+		else if(Step.equalsIgnoreCase("C"))
 			new StepCManager();
-		else if(step.equalsIgnoreCase("D"))
+		else if(Step.equalsIgnoreCase("D"))
 			new StepDManager();
-		else if(step.equalsIgnoreCase("E"))
+		else if(Step.equalsIgnoreCase("E"))
 			new StepEManager();
-		else if(step.equalsIgnoreCase("F"))
+		else if(Step.equalsIgnoreCase("F"))
 			new StepFManager();
-		else if(step.equalsIgnoreCase("G"))
+		else if(Step.equalsIgnoreCase("G"))
 			new StepGManager();
-		else if(step.equalsIgnoreCase("H"))
+		else if(Step.equalsIgnoreCase("H"))
 			new StepHManager();
-		else if(step.equalsIgnoreCase("I"))
+		else if(Step.equalsIgnoreCase("I"))
 			new StepIManager();
+		else if(Step.equalsIgnoreCase("J"))
+			new StepJManager();
 		
 		System.out.printf("종료되었습니다.\n");
 	}	
