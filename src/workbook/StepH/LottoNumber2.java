@@ -22,14 +22,7 @@ public class LottoNumber2 {
 		System.out.printf("일치하는 로또 번호는 %d개 입니다.\n", match_count);
 	
 	}	
-	/*
-	 * 현재 로또배열 변수에 새로 생성된 번호가 같은게 있는지 리턴하는 함수 : ??
-		컴퓨터가 로또번호 생성하는 함수(1번함수 사용) : getLotto_com()
-		사용자 로또번호 입력 함수(1번함수 사용) : input()
-		컴과 사용자 로또번호가 같은게 있는지 비교하는 함수
-		화면에 출력하는 함수 : printNum()
-	 * */
-	
+
 	
 	void input() {
 		Scanner s = new Scanner(System.in);
