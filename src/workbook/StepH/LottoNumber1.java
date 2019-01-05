@@ -8,17 +8,17 @@ public class LottoNumber1 {Random generator = new Random();
 	private int lotto[] = new int[6]; // 컴퓨터가 만들어 낸 로또 번호 리스트
 	private int count=0; // 현재 만들어지고 있는 로또 번호의 순서(0, 1, 2, 3, 4, 5)
 	private String onemore ; // 반복여부를 입력하는 문자 (Y/N)
-
-public LottoNumber1(){input();}
-
-public void printNum() {
-
-
-}	
+	
+	public LottoNumber1(){input();}
+	
+	public void printNum() {
 
 
+	}	
 
-void input() {
+
+
+	void input() {
 	Scanner s = new Scanner(System.in);
 	
 	while(true) {
@@ -38,10 +38,9 @@ void input() {
 		this.onemore = s.next();
 		if(onemore.equalsIgnoreCase("N"))  break;
 		
-	}
+		}
 
 	}	
-
 }
 
 
