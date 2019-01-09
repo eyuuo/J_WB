@@ -1,6 +1,7 @@
 
 import java.util.Scanner;
 
+
 import workbook.StepA.StepAManager;
 import workbook.StepB.StepBManager;
 import workbook.StepC.StepCManager;
@@ -11,6 +12,8 @@ import workbook.StepG.StepGManager;
 import workbook.StepH.StepHManager;
 import workbook.StepI.StepIManager;
 import workbook.StepJ.StepJManager;
+import workbook.StepK.StepKManager;
+import workbook.StepL.StepLManager;
 
 public class WBManager {
 
@@ -20,7 +23,7 @@ public class WBManager {
 		System.out.print("원하는 Step은?");
 	    String Step;
 	    Step= s.next(); 
-		if(Step.equalsIgnoreCase("A"))
+			if(Step.equalsIgnoreCase("A"))
 			new StepAManager();
 		else if(Step.equalsIgnoreCase("B"))
 			new StepBManager();
@@ -40,6 +43,10 @@ public class WBManager {
 			new StepIManager();
 		else if(Step.equalsIgnoreCase("J"))
 			new StepJManager();
+		else if(Step.equalsIgnoreCase("K"))
+			new StepKManager();
+		else if(Step.equalsIgnoreCase("L"))
+			new StepLManager();
 		
 		System.out.printf("종료되었습니다.\n");
 	}	
