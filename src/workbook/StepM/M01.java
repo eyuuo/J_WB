@@ -8,7 +8,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.IOException;
-
+import java.io.FileReader;
 
 class Menupan1{
 	private int money; // 번호,이름
@@ -55,10 +55,10 @@ public class M01{
 		
 		while(true){
 			
-			System.out.print("1) 추가 2) 수정 3) 삭제 4)리스트 5)총개수 6)파일저장 7)종료 ==> ");
+			System.out.print("1) 추가 2) 수정 3) 삭제 4)리스트 5)총개수 6)파일저장 7)파일내용 추가 8)파일 보기 9)종료 ==> ");
 			this.choice = s.nextInt();
 			System.out.print("------------------------------\n");
-			if(choice==7) break;
+			if(choice==9) break;
 			if(choice==1) {
 				System.out.print("메뉴의 메뉴명, 원산지, 가격을 입력하시오.");
 				this.name = s.next();
@@ -99,10 +99,7 @@ public class M01{
 				String txt,kk;
 
 		        try{
-		                         
-		            // BufferedWriter 와 FileWriter를 조합하여 사용 (속도 향상)
-		            BufferedWriter fw = new BufferedWriter(new FileWriter(fileName, false));
-		            	
+		        	BufferedWriter fw = new BufferedWriter(new FileWriter(fileName,false));	
 		            for(int k=0;k<u.size();k++) {
 		            	kk=k+" ";
 		            	fw.write(kk); 
@@ -110,10 +107,7 @@ public class M01{
 						 
 						 fw.write(txt);
 						 }
-		            // 파일안에 문자열 
 		            fw.flush();
-		 
-		            // 객체 닫기
 		            fw.close(); 
 		            System.out.printf("저장되었습니다.\n");
 		             
@@ -122,6 +116,46 @@ public class M01{
 		        }
 		         
 			}//if
+			if(choice == 7) {
+				
+				try{
+		            FileReader filereader = new FileReader(fileName);
+		            BufferedReader bufReader = new BufferedReader(filereader);
+		            String line = "";
+		            while((line = bufReader.readLine()) != null){
+		            	
+		            	String[] W = line.split("\\s");
+		            	int p=Integer.parseInt(W[0]);
+		            	this.name = W[1];
+		            	this.origin = W[2];
+		            	this.money = Integer.parseInt(W[3]);
+		            	u.add(p+u.size(),new Menupan1(name, origin, money));
+		            	
+		            	System.out.print("가져온 내역\n");
+		                System.out.println(line);
+		            }          
+		            bufReader.close();
+		        }catch (FileNotFoundException e) {
+		        }catch(IOException e){
+		            System.out.println(e);
+		        }
+			}
+			if(choice == 8) {
+				
+				try{
+		            FileReader filereader = new FileReader(fileName);
+		            BufferedReader bufReader = new BufferedReader(filereader);
+		            String line = "";
+		            while((line = bufReader.readLine()) != null){
+		            	System.out.println("파일 내역.");
+		                System.out.println(line);
+		            }          
+		            bufReader.close();
+		        }catch (FileNotFoundException e) {
+		        }catch(IOException e){
+		            System.out.println(e);
+		        }
+			}
 		
 		}
 	
