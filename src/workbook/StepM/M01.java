@@ -101,7 +101,7 @@ public class M01{
 		        try{
 		                         
 		            // BufferedWriter 와 FileWriter를 조합하여 사용 (속도 향상)
-		            BufferedWriter fw = new BufferedWriter(new FileWriter(fileName, true));
+		            BufferedWriter fw = new BufferedWriter(new FileWriter(fileName, false));
 		            	
 		            for(int k=0;k<u.size();k++) {
 		            	kk=k+" ";
